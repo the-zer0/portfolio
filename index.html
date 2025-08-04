@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mannem Manobharath - Portfolio</title>
-    <link rel="icon" href="Manobharath.jpg" type="image/png"> 
+    <link rel="icon" href="Manobharath.jpg" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -18,9 +19,11 @@
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            color: #ffffff; /* Default text color set to white */
+            color: #ffffff;
+            /* Default text color set to white */
             overflow-x: hidden;
-            background: #0d0d0d; /* Slightly less deep black */
+            background: #0d0d0d;
+            /* Slightly less deep black */
         }
 
         /* Smooth scrolling */
@@ -33,12 +36,15 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(13, 13, 13, 0.95); /* Matches body background, slightly transparent */
-            backdrop-filter: blur(8px); /* Slightly less blur */
+            background: rgba(13, 13, 13, 0.95);
+            /* Matches body background, slightly transparent */
+            backdrop-filter: blur(8px);
+            /* Slightly less blur */
             z-index: 1000;
             padding: 1rem 0;
             transition: all 0.3s ease;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.03); /* More subtle border */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            /* More subtle border */
         }
 
         nav {
@@ -53,21 +59,28 @@
         /* Logo Styling - UPDATED */
         .logo {
             /* Removed font-size, font-weight, color, text-shadow as it's an image now */
-            display: flex; /* To center the image if needed */
+            display: flex;
+            /* To center the image if needed */
             align-items: center;
-            height: 40px; /* Control the height of the logo container in the navbar */
+            height: 40px;
+            /* Control the height of the logo container in the navbar */
         }
 
         .logo img {
-            max-height: 100%; /* Make image responsive within its container */
-            width: auto; /* Maintain aspect ratio */
-            max-width: 100%; /* Ensure it doesn't overflow on small screens */
-            filter: drop-shadow(0 0 5px rgba(0, 204, 102, 0.3)); /* Subtle glow for the logo image */
+            max-height: 100%;
+            /* Make image responsive within its container */
+            width: auto;
+            /* Maintain aspect ratio */
+            max-width: 100%;
+            /* Ensure it doesn't overflow on small screens */
+            filter: drop-shadow(0 0 5px rgba(0, 204, 102, 0.3));
+            /* Subtle glow for the logo image */
             transition: filter 0.3s ease;
         }
 
         .logo img:hover {
-            filter: drop-shadow(0 0 10px rgba(0, 204, 102, 0.6)); /* Slightly more prominent glow on hover */
+            filter: drop-shadow(0 0 10px rgba(0, 204, 102, 0.6));
+            /* Slightly more prominent glow on hover */
         }
 
 
@@ -79,7 +92,8 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #e0e0e0; /* Off-white for general links */
+            color: #e0e0e0;
+            /* Off-white for general links */
             transition: all 0.3s ease;
             position: relative;
             font-weight: 500;
@@ -87,18 +101,23 @@
         }
 
         .nav-links a:hover {
-            color: #00cc66; /* Subtle green on hover */
-            text-shadow: none; /* Removed hover text shadow */
+            color: #00cc66;
+            /* Subtle green on hover */
+            text-shadow: none;
+            /* Removed hover text shadow */
         }
 
         .nav-links a::after {
             content: '';
             position: absolute;
             width: 0;
-            height: 2px; /* Thinner underline */
-            bottom: -5px; /* Moved up slightly */
+            height: 2px;
+            /* Thinner underline */
+            bottom: -5px;
+            /* Moved up slightly */
             left: 0;
-            background: linear-gradient(90deg, #00cc66, #0099e6); /* Subtle green to blue gradient */
+            background: linear-gradient(90deg, #00cc66, #0099e6);
+            /* Subtle green to blue gradient */
             transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
@@ -109,7 +128,8 @@
 
         .nav-links a.active {
             color: #00cc66;
-            text-shadow: none; /* Removed active text shadow */
+            text-shadow: none;
+            /* Removed active text shadow */
         }
 
         .mobile-menu {
@@ -132,7 +152,8 @@
         /* Hero Section - Fully responsive */
         .hero {
             min-height: 100vh;
-            background: radial-gradient(ellipse at center, #1a1a1a 0%, #0d0d0d 50%, #050505 100%); /* Adjusted gradient shades */
+            background: radial-gradient(ellipse at center, #1a1a1a 0%, #0d0d0d 50%, #050505 100%);
+            /* Adjusted gradient shades */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -151,17 +172,36 @@
             right: 0;
             bottom: 0;
             background:
-                radial-gradient(circle at 15% 40%, rgba(0, 204, 102, 0.04) 0%, transparent 50%), /* Reduced opacity */
-                radial-gradient(circle at 85% 15%, rgba(0, 153, 230, 0.04) 0%, transparent 50%), /* Reduced opacity */
-                radial-gradient(circle at 30% 90%, rgba(255, 0, 150, 0.04) 0%, transparent 50%); /* Reduced opacity */
-            animation: floatingOrbs 15s ease-in-out infinite; /* Slower animation, removed alternate */
+                radial-gradient(circle at 15% 40%, rgba(0, 204, 102, 0.04) 0%, transparent 50%),
+                /* Reduced opacity */
+                radial-gradient(circle at 85% 15%, rgba(0, 153, 230, 0.04) 0%, transparent 50%),
+                /* Reduced opacity */
+                radial-gradient(circle at 30% 90%, rgba(255, 0, 150, 0.04) 0%, transparent 50%);
+            /* Reduced opacity */
+            animation: floatingOrbs 15s ease-in-out infinite;
+            /* Slower animation, removed alternate */
         }
 
         @keyframes floatingOrbs {
-            0% { transform: translate(0, 0) rotate(0deg); opacity: 0.7; }
-            33% { transform: translate(40px, -40px) rotate(120deg); opacity: 0.8; }
-            66% { transform: translate(-25px, 25px) rotate(240deg); opacity: 0.7; }
-            100% { transform: translate(0, 0) rotate(360deg); opacity: 0.7; }
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+                opacity: 0.7;
+            }
+
+            33% {
+                transform: translate(40px, -40px) rotate(120deg);
+                opacity: 0.8;
+            }
+
+            66% {
+                transform: translate(-25px, 25px) rotate(240deg);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+                opacity: 0.7;
+            }
         }
 
         .hero-content {
@@ -177,13 +217,16 @@
             font-size: 5rem;
             font-weight: 900;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #00cc66, #0099e6, #e91e63); /* Same gradient colors, but will interact with less shadow */
-            background-size: 200% 200%; /* Reduced size for less dramatic shift */
+            background: linear-gradient(135deg, #00cc66, #0099e6, #e91e63);
+            /* Same gradient colors, but will interact with less shadow */
+            background-size: 200% 200%;
+            /* Reduced size for less dramatic shift */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             animation: gradientShift 3s ease-in-out infinite alternate, fadeInUp 1s ease;
-            text-shadow: 0 0 20px rgba(0, 204, 102, 0.15); /* Significantly reduced text shadow */
+            text-shadow: 0 0 20px rgba(0, 204, 102, 0.15);
+            /* Significantly reduced text shadow */
             letter-spacing: -3px;
         }
 
@@ -199,7 +242,8 @@
 
         .typing-text {
             color: #00cc66;
-            border-right: 2px solid #00cc66; /* Thinner cursor */
+            border-right: 2px solid #00cc66;
+            /* Thinner cursor */
             animation: blink 0.8s step-end infinite alternate;
             display: inline-block;
         }
@@ -224,51 +268,129 @@
 
         .floating-element {
             position: absolute;
-            width: 4px; /* Smaller */
+            width: 4px;
+            /* Smaller */
             height: 4px;
-            background: #00cc66; /* Subtle green particles */
+            background: #00cc66;
+            /* Subtle green particles */
             border-radius: 50%;
-            animation: float 10s ease-in-out infinite; /* Slower float */
-            opacity: 0.4; /* Reduced opacity */
-            box-shadow: 0 0 5px rgba(0, 204, 102, 0.3); /* Subtle glow */
+            animation: float 10s ease-in-out infinite;
+            /* Slower float */
+            opacity: 0.4;
+            /* Reduced opacity */
+            box-shadow: 0 0 5px rgba(0, 204, 102, 0.3);
+            /* Subtle glow */
         }
 
-        .floating-element:nth-child(1) { left: 10%; animation-delay: 0s; top: 10%; }
-        .floating-element:nth-child(2) { left: 20%; animation-delay: 1.8s; top: 30%; }
-        .floating-element:nth-child(3) { left: 30%; animation-delay: 3.6s; top: 5%; }
-        .floating-element:nth-child(4) { left: 40%; animation-delay: 5.4s; top: 60%; }
-        .floating-element:nth-child(5) { left: 50%; animation-delay: 7.2s; top: 20%; }
-        .floating-element:nth-child(6) { left: 60%; animation-delay: 9s; top: 80%; }
-        .floating-element:nth-child(7) { left: 70%; animation-delay: 2.5s; top: 40%; }
-        .floating-element:nth-child(8) { left: 80%; animation-delay: 4.3s; top: 15%; }
-        .floating-element:nth-child(9) { left: 90%; animation-delay: 6.1s; top: 70%; }
+        .floating-element:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+            top: 10%;
+        }
+
+        .floating-element:nth-child(2) {
+            left: 20%;
+            animation-delay: 1.8s;
+            top: 30%;
+        }
+
+        .floating-element:nth-child(3) {
+            left: 30%;
+            animation-delay: 3.6s;
+            top: 5%;
+        }
+
+        .floating-element:nth-child(4) {
+            left: 40%;
+            animation-delay: 5.4s;
+            top: 60%;
+        }
+
+        .floating-element:nth-child(5) {
+            left: 50%;
+            animation-delay: 7.2s;
+            top: 20%;
+        }
+
+        .floating-element:nth-child(6) {
+            left: 60%;
+            animation-delay: 9s;
+            top: 80%;
+        }
+
+        .floating-element:nth-child(7) {
+            left: 70%;
+            animation-delay: 2.5s;
+            top: 40%;
+        }
+
+        .floating-element:nth-child(8) {
+            left: 80%;
+            animation-delay: 4.3s;
+            top: 15%;
+        }
+
+        .floating-element:nth-child(9) {
+            left: 90%;
+            animation-delay: 6.1s;
+            top: 70%;
+        }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
-            25% { transform: translateY(-15px) translateX(8px) rotate(30deg); }
-            50% { transform: translateY(15px) translateX(-8px) rotate(60deg); }
-            75% { transform: translateY(-8px) translateX(4px) rotate(90deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+
+            25% {
+                transform: translateY(-15px) translateX(8px) rotate(30deg);
+            }
+
+            50% {
+                transform: translateY(15px) translateX(-8px) rotate(60deg);
+            }
+
+            75% {
+                transform: translateY(-8px) translateX(4px) rotate(90deg);
+            }
         }
 
         .code-lines {
             position: absolute;
             top: 20%;
             left: 5%;
-            color: rgba(0, 204, 102, 0.1); /* Even more subtle green for code */
+            color: rgba(0, 204, 102, 0.1);
+            /* Even more subtle green for code */
             font-family: 'Fira Code', 'Courier New', monospace;
             font-size: 0.85rem;
             line-height: 1.9;
             z-index: 1;
             white-space: pre;
-            animation: codeScroll 12s linear infinite; /* Slower scroll */
+            animation: codeScroll 12s linear infinite;
+            /* Slower scroll */
             pointer-events: none;
         }
 
         @keyframes codeScroll {
-            0% { transform: translateY(0); opacity: 0; }
-            10% { opacity: 0.6; } /* Reduced peak opacity */
-            90% { opacity: 0.6; }
-            100% { transform: translateY(-100px); opacity: 0; }
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.6;
+            }
+
+            /* Reduced peak opacity */
+            90% {
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
         }
 
         .hero-stats {
@@ -284,19 +406,26 @@
         .stat-item {
             text-align: center;
             color: rgba(255, 255, 255, 0.8);
-            background: rgba(26, 26, 26, 0.5); /* Semi-transparent darker background for stats */
+            background: rgba(26, 26, 26, 0.5);
+            /* Semi-transparent darker background for stats */
             padding: 1.2rem 1.8rem;
             border-radius: 12px;
-            border: 1px solid rgba(0, 204, 102, 0.1); /* Lighter border */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+            border: 1px solid rgba(0, 204, 102, 0.1);
+            /* Lighter border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Reduced shadow */
             transition: all 0.3s ease;
         }
 
         .stat-item:hover {
-            transform: translateY(-3px) scale(1.01); /* Reduced lift and scale */
-            background: rgba(0, 204, 102, 0.08); /* More subtle background on hover */
-            border-color: #00cc66; /* Accent border on hover */
-            box-shadow: 0 0 20px rgba(0, 204, 102, 0.2); /* Reduced glow on hover */
+            transform: translateY(-3px) scale(1.01);
+            /* Reduced lift and scale */
+            background: rgba(0, 204, 102, 0.08);
+            /* More subtle background on hover */
+            border-color: #00cc66;
+            /* Accent border on hover */
+            box-shadow: 0 0 20px rgba(0, 204, 102, 0.2);
+            /* Reduced glow on hover */
         }
 
         .stat-number {
@@ -305,7 +434,8 @@
             color: #00cc66;
             display: block;
             margin-bottom: 0.3rem;
-            text-shadow: 0 0 5px rgba(0, 204, 102, 0.3); /* Reduced text shadow */
+            text-shadow: 0 0 5px rgba(0, 204, 102, 0.3);
+            /* Reduced text shadow */
         }
 
         .stat-label {
@@ -340,7 +470,8 @@
             left: -150%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent); /* Softer shimmer */
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            /* Softer shimmer */
             transition: left 0.6s ease-in-out;
         }
 
@@ -349,33 +480,44 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #00cc66, #0099e6); /* Subtle green to blue gradient */
+            background: linear-gradient(135deg, #00cc66, #0099e6);
+            /* Subtle green to blue gradient */
             color: #000;
-            box-shadow: 0 0 15px rgba(0, 204, 102, 0.25); /* Reduced glow */
+            box-shadow: 0 0 15px rgba(0, 204, 102, 0.25);
+            /* Reduced glow */
         }
 
         .btn-secondary {
             background: transparent;
             color: #fff;
-            border: 2px solid #00cc66; /* Subtle green border */
-            box-shadow: 0 0 15px rgba(0, 204, 102, 0.15); /* Reduced glow */
+            border: 2px solid #00cc66;
+            /* Subtle green border */
+            box-shadow: 0 0 15px rgba(0, 204, 102, 0.15);
+            /* Reduced glow */
         }
 
         .btn:hover {
-            transform: translateY(-3px); /* Reduced lift */
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); /* Reduced general shadow */
+            transform: translateY(-3px);
+            /* Reduced lift */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            /* Reduced general shadow */
         }
 
         .btn-primary:hover {
-            box-shadow: 0 15px 35px rgba(0, 204, 102, 0.35); /* Reduced glow on hover */
-            background: linear-gradient(135deg, #0099e6, #00cc66); /* Reverse gradient on hover */
+            box-shadow: 0 15px 35px rgba(0, 204, 102, 0.35);
+            /* Reduced glow on hover */
+            background: linear-gradient(135deg, #0099e6, #00cc66);
+            /* Reverse gradient on hover */
         }
 
         .btn-secondary:hover {
-            background: rgba(0, 204, 102, 0.1); /* More subtle background */
-            border-color: #0099e6; /* Blue border on hover */
+            background: rgba(0, 204, 102, 0.1);
+            /* More subtle background */
+            border-color: #0099e6;
+            /* Blue border on hover */
             color: #0099e6;
-            box-shadow: 0 15px 35px rgba(0, 153, 230, 0.3); /* Reduced glow */
+            box-shadow: 0 15px 35px rgba(0, 153, 230, 0.3);
+            /* Reduced glow */
         }
 
         /* Sections - Responsive containers */
@@ -388,11 +530,13 @@
         }
 
         section:not(#home) {
-            background: #1a1a1a; /* Dark charcoal for content sections */
+            background: #1a1a1a;
+            /* Dark charcoal for content sections */
             color: #e0e0e0;
             border-radius: 15px;
             margin-bottom: 3rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Reduced shadow */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            /* Reduced shadow */
         }
 
         /* Section Dividers */
@@ -401,11 +545,15 @@
             bottom: -30px;
             left: 50%;
             transform: translateX(-50%);
-            width: 70%; /* Slightly narrower */
-            height: 1px; /* Thinner line */
-            background: linear-gradient(90deg, transparent, rgba(0, 204, 102, 0.2), transparent); /* Very subtle gradient divider */
+            width: 70%;
+            /* Slightly narrower */
+            height: 1px;
+            /* Thinner line */
+            background: linear-gradient(90deg, transparent, rgba(0, 204, 102, 0.2), transparent);
+            /* Very subtle gradient divider */
             z-index: 0;
-            opacity: 0.4; /* Reduced opacity */
+            opacity: 0.4;
+            /* Reduced opacity */
         }
 
         .section-title {
@@ -415,14 +563,17 @@
             color: #ffffff;
             position: relative;
             font-weight: 700;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Reduced text shadow */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            /* Reduced text shadow */
         }
 
         .section-title::after {
             content: '';
             position: absolute;
-            width: 60px; /* Slightly narrower underline */
-            height: 3px; /* Slightly thinner underline */
+            width: 60px;
+            /* Slightly narrower underline */
+            height: 3px;
+            /* Slightly thinner underline */
             background: linear-gradient(90deg, #00cc66, #0099e6);
             bottom: -15px;
             left: 50%;
@@ -439,7 +590,8 @@
         }
 
         .about-info h3 {
-            color: #00cc66; /* Accent color for subheadings */
+            color: #00cc66;
+            /* Accent color for subheadings */
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
         }
@@ -451,12 +603,15 @@
         }
 
         .contact-info {
-            background: #222222; /* Slightly lighter charcoal for contact info */
+            background: #222222;
+            /* Slightly lighter charcoal for contact info */
             padding: 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* Reduced shadow */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            /* Reduced shadow */
             height: fit-content;
-            border: 1px solid rgba(255,255,255,0.04); /* More subtle border */
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            /* More subtle border */
         }
 
         .contact-info h3 {
@@ -476,7 +631,8 @@
         }
 
         .contact-item i {
-            color: #00cc66; /* Green icons */
+            color: #00cc66;
+            /* Green icons */
             width: 25px;
             font-size: 1.3rem;
             text-align: center;
@@ -490,7 +646,8 @@
 
         .contact-item a:hover {
             color: #00cc66;
-            text-shadow: none; /* Removed hover text shadow */
+            text-shadow: none;
+            /* Removed hover text shadow */
         }
 
         /* Education Section - Responsive timeline */
@@ -506,35 +663,43 @@
             left: 0;
             top: 0;
             height: 100%;
-            width: 2px; /* Thinner line */
-            background: linear-gradient(to bottom, #00cc66, #0099e6); /* Subtle gradient timeline */
+            width: 2px;
+            /* Thinner line */
+            background: linear-gradient(to bottom, #00cc66, #0099e6);
+            /* Subtle gradient timeline */
         }
 
         .education-item {
             position: relative;
             margin-bottom: 2.5rem;
-            background: #222222; /* Lighter charcoal for items */
+            background: #222222;
+            /* Lighter charcoal for items */
             padding: 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* Reduced shadow */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            /* Reduced shadow */
             transform: translateX(30px);
             opacity: 0;
             animation: slideInLeft 0.7s ease forwards;
-            border: 1px solid rgba(255,255,255,0.04);
+            border: 1px solid rgba(255, 255, 255, 0.04);
         }
 
         .education-item::before {
             content: '';
             position: absolute;
-            left: -3.3rem; /* Adjusted for thinner line */
+            left: -3.3rem;
+            /* Adjusted for thinner line */
             top: 2.8rem;
-            width: 14px; /* Slightly smaller dot */
+            width: 14px;
+            /* Slightly smaller dot */
             height: 14px;
             background: #00cc66;
             border-radius: 50%;
-            border: 3px solid #1a1a1a; /* Matches section background */
+            border: 3px solid #1a1a1a;
+            /* Matches section background */
             z-index: 2;
-            box-shadow: 0 0 10px rgba(0, 204, 102, 0.3); /* Reduced glow */
+            box-shadow: 0 0 10px rgba(0, 204, 102, 0.3);
+            /* Reduced glow */
         }
 
         .education-item h3 {
@@ -544,7 +709,8 @@
         }
 
         .education-item .degree {
-            color: #00cc66; /* Accent for degree */
+            color: #00cc66;
+            /* Accent for degree */
             font-weight: 500;
             margin-bottom: 0.8rem;
             font-size: 1.1rem;
@@ -556,7 +722,8 @@
         }
 
         .education-item .cgpa {
-            background: rgba(0, 204, 102, 0.08); /* More subtle green background */
+            background: rgba(0, 204, 102, 0.08);
+            /* More subtle green background */
             color: #00cc66;
             padding: 0.6rem 1.2rem;
             border-radius: 30px;
@@ -564,7 +731,8 @@
             display: inline-block;
             margin-top: 0.8rem;
             font-weight: 600;
-            border: 1px solid rgba(0, 204, 102, 0.2); /* Reduced border opacity */
+            border: 1px solid rgba(0, 204, 102, 0.2);
+            /* Reduced border opacity */
         }
 
         /* Projects Section - Responsive grid */
@@ -575,15 +743,17 @@
         }
 
         .project-card {
-            background: #222222; /* Lighter charcoal */
+            background: #222222;
+            /* Lighter charcoal */
             padding: 3rem;
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* Reduced shadow */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            /* Reduced shadow */
             transition: all 0.4s ease;
             transform: translateY(30px);
             opacity: 0;
             animation: fadeInUp 0.7s ease forwards;
-            border: 1px solid rgba(255,255,255,0.04);
+            border: 1px solid rgba(255, 255, 255, 0.04);
             position: relative;
             overflow: hidden;
         }
@@ -595,20 +765,25 @@
             left: -20px;
             right: -20px;
             bottom: -20px;
-            background: radial-gradient(circle, rgba(0, 204, 102, 0.03) 0%, transparent 50%); /* Reduced opacity */
+            background: radial-gradient(circle, rgba(0, 204, 102, 0.03) 0%, transparent 50%);
+            /* Reduced opacity */
             z-index: 0;
             opacity: 0;
             transition: opacity 0.5s ease;
         }
 
         .project-card:hover::before {
-            opacity: 0.8; /* Reduced maximum opacity */
+            opacity: 0.8;
+            /* Reduced maximum opacity */
         }
 
         .project-card:hover {
-            transform: translateY(-10px); /* Reduced lift */
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3); /* Reduced shadow on hover */
-            border-color: #00cc66; /* Accent border on hover */
+            transform: translateY(-10px);
+            /* Reduced lift */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            /* Reduced shadow on hover */
+            border-color: #00cc66;
+            /* Accent border on hover */
         }
 
         .project-card h3 {
@@ -623,9 +798,11 @@
         }
 
         .project-card h3 i {
-            color: #00cc66; /* Green icon */
+            color: #00cc66;
+            /* Green icon */
             font-size: 1.8rem;
-            filter: drop-shadow(0 0 5px rgba(0, 204, 102, 0.3)); /* Reduced glow */
+            filter: drop-shadow(0 0 5px rgba(0, 204, 102, 0.3));
+            /* Reduced glow */
         }
 
         .project-card p {
@@ -646,21 +823,25 @@
         }
 
         .tech-tag {
-            background: rgba(0, 204, 102, 0.08); /* More subtle green tint background */
+            background: rgba(0, 204, 102, 0.08);
+            /* More subtle green tint background */
             color: #00cc66;
             padding: 0.5rem 1rem;
             border-radius: 25px;
             font-size: 0.85rem;
             font-weight: 500;
-            border: 1px solid rgba(0, 204, 102, 0.2); /* Reduced border opacity */
+            border: 1px solid rgba(0, 204, 102, 0.2);
+            /* Reduced border opacity */
             transition: all 0.3s ease;
         }
 
         .tech-tag:hover {
             background: #00cc66;
             color: #1a1a1a;
-            transform: translateY(-2px) scale(1.02); /* Reduced lift and scale */
-            box-shadow: 0 3px 10px rgba(0, 204, 102, 0.2); /* Reduced glow */
+            transform: translateY(-2px) scale(1.02);
+            /* Reduced lift and scale */
+            box-shadow: 0 3px 10px rgba(0, 204, 102, 0.2);
+            /* Reduced glow */
         }
 
         /* Skills Section - Responsive grid */
@@ -671,13 +852,15 @@
         }
 
         .skill-category {
-            background: #222222; /* Lighter charcoal */
+            background: #222222;
+            /* Lighter charcoal */
             padding: 3rem;
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* Reduced shadow */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            /* Reduced shadow */
             text-align: center;
             transition: transform 0.4s ease, box-shadow 0.4s ease;
-            border: 1px solid rgba(255,255,255,0.04);
+            border: 1px solid rgba(255, 255, 255, 0.04);
             position: relative;
             overflow: hidden;
             z-index: 1;
@@ -691,19 +874,23 @@
             transform: translate(-50%, -50%) scale(0);
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(0, 204, 102, 0.05) 0%, transparent 70%); /* Reduced opacity */
+            background: radial-gradient(circle, rgba(0, 204, 102, 0.05) 0%, transparent 70%);
+            /* Reduced opacity */
             border-radius: 50%;
             transition: transform 0.6s ease;
             z-index: 0;
         }
 
         .skill-category:hover::before {
-            transform: translate(-50%, -50%) scale(1.1); /* Reduced scale */
+            transform: translate(-50%, -50%) scale(1.1);
+            /* Reduced scale */
         }
 
         .skill-category:hover {
-            transform: translateY(-10px); /* Reduced lift */
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3); /* Reduced shadow */
+            transform: translateY(-10px);
+            /* Reduced lift */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            /* Reduced shadow */
             border-color: #00cc66;
         }
 
@@ -719,14 +906,16 @@
             font-size: 3.5rem;
             color: #00cc66;
             margin-bottom: 2rem;
-            filter: drop-shadow(0 0 8px rgba(0, 204, 102, 0.4)); /* Reduced glow */
+            filter: drop-shadow(0 0 8px rgba(0, 204, 102, 0.4));
+            /* Reduced glow */
             transition: transform 0.3s ease;
             position: relative;
             z-index: 1;
         }
 
         .skill-category:hover i {
-            transform: scale(1.05); /* Reduced scale */
+            transform: scale(1.05);
+            /* Reduced scale */
         }
 
         .skill-list {
@@ -739,21 +928,24 @@
         }
 
         .skill-item {
-            background: rgba(255, 255, 255, 0.08); /* More subtle semi-transparent white */
+            background: rgba(255, 255, 255, 0.08);
+            /* More subtle semi-transparent white */
             padding: 0.7rem 1.4rem;
             border-radius: 30px;
             font-size: 0.95rem;
             color: #ffffff;
             font-weight: 500;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.15); /* More subtle border */
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            /* More subtle border */
         }
 
         .skill-item:hover {
             background: #00cc66;
             color: #1a1a1a;
             transform: translateY(-3px);
-            box-shadow: 0 3px 10px rgba(0, 204, 102, 0.2); /* Reduced glow */
+            box-shadow: 0 3px 10px rgba(0, 204, 102, 0.2);
+            /* Reduced glow */
         }
 
         /* Achievements Section - Responsive list */
@@ -766,8 +958,10 @@
             background: #222222;
             padding: 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* Reduced shadow */
-            border-left: 4px solid #00cc66; /* Slightly thinner, subtle green border */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            /* Reduced shadow */
+            border-left: 4px solid #00cc66;
+            /* Slightly thinner, subtle green border */
             transition: all 0.4s ease;
             display: flex;
             align-items: center;
@@ -775,6 +969,8 @@
             color: #e0e0e0;
             position: relative;
             overflow: hidden;
+            cursor: pointer;
+            /* Add cursor pointer for clickable items */
         }
 
         .achievement-item::before {
@@ -784,7 +980,8 @@
             top: 0;
             bottom: 0;
             width: 0;
-            background: rgba(0, 204, 102, 0.05); /* Reduced opacity */
+            background: rgba(0, 204, 102, 0.05);
+            /* Reduced opacity */
             transition: width 0.4s ease;
         }
 
@@ -793,13 +990,17 @@
         }
 
         .achievement-item:hover {
-            transform: translateX(10px); /* Reduced slide */
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3); /* Reduced shadow */
-            border-color: #0099e6; /* Subtle blue on hover */
+            transform: translateX(10px);
+            /* Reduced slide */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            /* Reduced shadow */
+            border-color: #0099e6;
+            /* Subtle blue on hover */
         }
 
         .achievement-item i {
-            color: #00cc66; /* Green icon */
+            color: #00cc66;
+            /* Green icon */
             font-size: 1.8rem;
             min-width: 40px;
             text-align: center;
@@ -817,13 +1018,104 @@
             font-weight: 600;
         }
 
+        /* Certificate Modal Styles */
+        .certificate-modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 2000;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .certificate-modal.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            position: relative;
+            /* Removed max-width/max-height here to let the image control the content size */
+            background-color: #1a1a1a;
+            /* Dark background for the modal content */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        .modal-image {
+            /* Adjusted for smaller image size */
+            max-width: 80vw;
+            /* Max 80% of viewport width */
+            max-height: 80vh;
+            /* Max 80% of viewport height */
+            width: auto;
+            /* Ensure aspect ratio is maintained */
+            height: auto;
+            /* Ensure aspect ratio is maintained */
+            display: block;
+            border-radius: 10px;
+            /* Keep consistent with modal-content */
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 2001;
+            /* Ensure it's above the image */
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #00cc66;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         /* Footer */
         footer {
-            background: #0d0d0d; /* Matches body background */
+            background: #0d0d0d;
+            /* Matches body background */
             color: white;
             text-align: center;
             padding: 4rem 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.03); /* Subtle border */
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            /* Subtle border */
         }
 
         .social-links {
@@ -839,23 +1131,30 @@
             transition: all 0.3s ease;
             padding: 0.6rem;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.03); /* More subtle background */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+            background: rgba(255, 255, 255, 0.03);
+            /* More subtle background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Reduced shadow */
         }
 
         .social-links a:hover {
             color: #00cc66;
-            transform: translateY(-5px) scale(1.05); /* Reduced lift and scale */
-            background: rgba(0, 204, 102, 0.08); /* More subtle background on hover */
-            box-shadow: 0 0 15px rgba(0, 204, 102, 0.3); /* Reduced glow */
+            transform: translateY(-5px) scale(1.05);
+            /* Reduced lift and scale */
+            background: rgba(0, 204, 102, 0.08);
+            /* More subtle background on hover */
+            box-shadow: 0 0 15px rgba(0, 204, 102, 0.3);
+            /* Reduced glow */
         }
 
         /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px); /* Slightly reduced starting point */
+                transform: translateY(30px);
+                /* Slightly reduced starting point */
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -865,8 +1164,10 @@
         @keyframes slideInLeft {
             from {
                 opacity: 0;
-                transform: translateX(50px); /* Slightly reduced starting point */
+                transform: translateX(50px);
+                /* Slightly reduced starting point */
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -914,7 +1215,8 @@
 
             /* Logo on Tablet */
             .logo {
-                height: 35px; /* Slightly smaller on tablets */
+                height: 35px;
+                /* Slightly smaller on tablets */
             }
         }
 
@@ -929,7 +1231,8 @@
                 background: rgba(13, 13, 13, 0.98);
                 flex-direction: column;
                 padding: 1.5rem;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                /* Reduced shadow */
             }
 
             .nav-links.active {
@@ -938,7 +1241,8 @@
 
             .nav-links a {
                 padding: 1rem 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* More subtle border */
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                /* More subtle border */
                 text-align: center;
             }
 
@@ -1093,9 +1397,11 @@
             footer {
                 padding: 2.5rem 1rem;
             }
+
             /* Logo on Mobile */
             .logo {
-                height: 30px; /* Even smaller on mobile */
+                height: 30px;
+                /* Even smaller on mobile */
             }
         }
 
@@ -1107,7 +1413,8 @@
 
             /* Logo on Small Mobile */
             .logo {
-                height: 25px; /* Smallest on very small screens */
+                height: 25px;
+                /* Smallest on very small screens */
             }
 
             .hero-title {
@@ -1176,7 +1483,8 @@
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
-            transition: all 0.6s ease-out; /* Slightly faster transition for subtlety */
+            transition: all 0.6s ease-out;
+            /* Slightly faster transition for subtlety */
         }
 
         .fade-in.visible {
@@ -1188,15 +1496,18 @@
         .ripple {
             position: absolute;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3); /* Even softer white ripple */
+            background: rgba(255, 255, 255, 0.3);
+            /* Even softer white ripple */
             transform: scale(0);
-            animation: ripple-animation 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Slightly faster ripple */
+            animation: ripple-animation 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            /* Slightly faster ripple */
             pointer-events: none;
             z-index: 2;
         }
 
         /* Print styles */
         @media print {
+
             header,
             .nav-links,
             .mobile-menu,
@@ -1283,7 +1594,8 @@
                 box-shadow: none;
             }
 
-            .cgpa, .tech-tag {
+            .cgpa,
+            .tech-tag {
                 background: #eee !important;
                 color: #555 !important;
                 border: 1px solid #ccc !important;
@@ -1300,6 +1612,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -1334,7 +1647,7 @@
             <div class="floating-element"></div>
             <div class="floating-element"></div>
         </div>
-        
+
         <div class="code-lines">
             const developer = {<br>
             &nbsp;&nbsp;name: "Manobharath",<br>
@@ -1353,7 +1666,8 @@
                 <a href="#about" class="btn btn-primary">
                     <i class="fas fa-rocket"></i> Explore My Work
                 </a>
-                <a href="YOUR_RESUME_PDF_LINK_HERE" class="btn btn-secondary" target="_blank" download="Mannem_Manobharath_Resume.pdf">
+                <a href="YOUR_RESUME_PDF_LINK_HERE" class="btn btn-secondary" target="_blank"
+                    download="Mannem_Manobharath_Resume.pdf">
                     <i class="fas fa-download"></i> Get Resume
                 </a>
             </div>
@@ -1393,7 +1707,8 @@
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/mannem-manobharath-771a18183/" target="_blank">LinkedIn Profile</a>
+                    <a href="https://www.linkedin.com/in/mannem-manobharath-771a18183/" target="_blank">LinkedIn
+                        Profile</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-github"></i>
@@ -1402,11 +1717,17 @@
             </div>
             <div class="about-info">
                 <h3>Hello! I'm Manobharath</h3>
-                <p>I'm a passionate Computer Science Engineering student at MLR Institute of Technology with a strong focus on full-stack development and artificial intelligence. Currently maintaining a CGPA of 9.15/10, I'm dedicated to creating innovative solutions that make a real impact.</p>
-                
-                <p>My journey in technology has led me to work on diverse projects ranging from web development to AI-powered systems. I enjoy tackling complex problems and am always eager to learn new technologies and frameworks.</p>
-                
-                <p>When I'm not coding, you'll find me participating in hackathons, contributing to open-source projects, or exploring the latest trends in technology. I believe in continuous learning and sharing knowledge with the community.</p>
+                <p>I'm a passionate Computer Science Engineering student at MLR Institute of Technology with a strong
+                    focus on full-stack development and artificial intelligence. Currently maintaining a CGPA of
+                    9.15/10, I'm dedicated to creating innovative solutions that make a real impact.</p>
+
+                <p>My journey in technology has led me to work on diverse projects ranging from web development to
+                    AI-powered systems. I enjoy tackling complex problems and am always eager to learn new technologies
+                    and frameworks.</p>
+
+                <p>When I'm not coding, you'll find me participating in hackathons, contributing to open-source
+                    projects, or exploring the latest trends in technology. I believe in continuous learning and sharing
+                    knowledge with the community.</p>
             </div>
         </div>
         <div class="section-divider"></div>
@@ -1442,7 +1763,9 @@
         <div class="projects-grid">
             <div class="project-card fade-in">
                 <h3><i class="fas fa-globe"></i> RentSpot - Object Rental Website</h3>
-                <p>Designed and developed a comprehensive object rental platform that provides users with the ability to both lease and rent products. The platform features a user-friendly interface and secure transaction handling.</p>
+                <p>Designed and developed a comprehensive object rental platform that provides users with the ability to
+                    both lease and rent products. The platform features a user-friendly interface and secure transaction
+                    handling.</p>
                 <div class="project-tech">
                     <span class="tech-tag">HTML</span>
                     <span class="tech-tag">CSS</span>
@@ -1457,7 +1780,9 @@
             </div>
             <div class="project-card fade-in">
                 <h3><i class="fas fa-car"></i> AutoPatrol - AI Traffic Violation Detection</h3>
-                <p>Developed an intelligent web-based system using YOLOv8, OpenCV, and EasyOCR to detect vehicles and number plates from traffic video feeds. Features real-time analysis with dynamic signal control and violation logging.</p>
+                <p>Developed an intelligent web-based system using YOLOv8, OpenCV, and EasyOCR to detect vehicles and
+                    number plates from traffic video feeds. Features real-time analysis with dynamic signal control and
+                    violation logging.</p>
                 <div class="project-tech">
                     <span class="tech-tag">YOLOv8</span>
                     <span class="tech-tag">OpenCV</span>
@@ -1517,25 +1842,25 @@
     <section id="achievements">
         <h2 class="section-title fade-in">Achievements & Certifications</h2>
         <div class="achievements-list">
-            <div class="achievement-item fade-in">
+            <div class="achievement-item fade-in" data-certificate="codequest.jpg">
                 <i class="fas fa-trophy"></i>
                 <div>
                     <strong>Runner-up of CodeQuest hackathon</strong> hosted by London Management Academy
                 </div>
             </div>
-            <div class="achievement-item fade-in">
+            <div class="achievement-item fade-in" data-certificate="servicenow_csa.jpg">
                 <i class="fas fa-certificate"></i>
                 <div>
                     <strong>Certified System Administrator</strong> - ServiceNow
                 </div>
             </div>
-            <div class="achievement-item fade-in">
+            <div class="achievement-item fade-in" data-certificate="npetel.jpg">
                 <i class="fas fa-cloud"></i>
                 <div>
                     <strong>Google Cloud Computing Foundations</strong> - NPTEL Course Completion
                 </div>
             </div>
-            <div class="achievement-item fade-in">
+            <div class="achievement-item fade-in" data-certificate="python_ibm.jpg">
                 <i class="fas fa-python"></i>
                 <div>
                     <strong>Python 101 for Data Science</strong> - Course Completion Certification
@@ -1544,7 +1869,8 @@
             <div class="achievement-item fade-in">
                 <i class="fas fa-users"></i>
                 <div>
-                    <strong>Associate of Google Developer Student Club - MLRT</strong> - Coordinated Google Cloud Study Jam
+                    <strong>Associate of Google Developer Student Club - MLRT</strong> - Coordinated Google Cloud Study
+                    Jam
                 </div>
             </div>
             <div class="achievement-item fade-in">
@@ -1579,6 +1905,13 @@
         </div>
         <p> Mannem Manobharath. </p>
     </footer>
+
+    <div id="certificateModal" class="certificate-modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage" src="" alt="Certificate">
+        </div>
+    </div>
 
     <script>
         // Smooth scrolling for navigation links
@@ -1634,7 +1967,7 @@
             const spans = mobileMenu.querySelectorAll('span');
             navLinks.classList.toggle('active');
             mobileMenu.classList.toggle('active');
-            
+
             if (navLinks.classList.contains('active')) {
                 spans[0].style.transform = 'rotate(45deg) translate(8px, 8px)';
                 spans[1].style.opacity = '0';
@@ -1667,7 +2000,7 @@
             // This function would typically be used to generate or fetch a resume dynamically.
             // For a static PDF, simply update the 'href' of the "Get Resume" link in the HTML
             // to point directly to your PDF file (e.g., href="your-resume.pdf").
-            console.log("Downloading resume..."); 
+            console.log("Downloading resume...");
             // Example of what it might do if dynamic:
             // const resumeContent = "Your dynamic resume text here...";
             // const blob = new Blob([resumeContent], { type: 'text/plain' });
@@ -1738,15 +2071,55 @@
         // Touch events for better mobile interaction (subtle scale down on touch)
         if ('ontouchstart' in window) {
             document.querySelectorAll('.project-card, .skill-category, .achievement-item, .stat-item').forEach(card => {
-                card.addEventListener('touchstart', function() {
+                card.addEventListener('touchstart', function () {
                     this.style.transform = 'scale(0.98)';
                 });
-                
-                card.addEventListener('touchend', function() {
+
+                card.addEventListener('touchend', function () {
                     this.style.transform = '';
                 });
             });
         }
+
+        // Certificate Modal Logic
+        const certificateModal = document.getElementById('certificateModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeButton = document.querySelector('.close-button');
+
+        document.querySelectorAll('.achievement-item[data-certificate]').forEach(item => {
+            item.addEventListener('click', function () {
+                const certificatePath = this.getAttribute('data-certificate');
+                if (certificatePath) {
+                    modalImage.src = certificatePath;
+                    certificateModal.classList.add('show');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+                }
+            });
+        });
+
+        // Close modal when close button is clicked
+        closeButton.addEventListener('click', () => {
+            certificateModal.classList.remove('show');
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+
+        // Close modal when clicking outside the image
+        certificateModal.addEventListener('click', (e) => {
+            if (e.target === certificateModal) {
+                certificateModal.classList.remove('show');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+
+        // Close modal when Escape key is pressed
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && certificateModal.classList.contains('show')) {
+                certificateModal.classList.remove('show');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        });
+
     </script>
 </body>
+
 </html>
